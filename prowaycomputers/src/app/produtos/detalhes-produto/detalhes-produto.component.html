@@ -5,9 +5,9 @@
     <div class="product-description__container">
         <h2 class="product__name">{{ produto?.descricao }}</h2>
         <h3 class="product__price">{{ produto?.preco | currency:"BRL" }}</h3>
-        <p>Estoque disponível</p>
+        <p>Estoque disponível:</p>
         <label>
-            Quantidade
+            Quantidade:
             <input type="number" [(ngModel)]="quantidade" min="1">
             unidade(s)
         </label>
@@ -16,3 +16,4 @@
         </p>
         <button (click)="adicionarAoCarrinho()">Adicionar ao carrinho</button>
     </div>
+</section>

@@ -29,7 +29,7 @@ export class CarrinhoComponent implements OnInit {
 
   removerProdutoCarrinho(produtoId: number) {
     this.itensCarrinho = this.itensCarrinho.filter(item => item.id !== produtoId);
-    this.carrinhoService.removerProduto(produtoId);
+    this.carrinhoService.removerProdutoCarrinho(produtoId);
     this.calculaTotal();
   }
 
